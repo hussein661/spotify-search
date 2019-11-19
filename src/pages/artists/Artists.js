@@ -17,7 +17,7 @@ class Artists extends Component {
 		return this.setState({ access_token });
 	}
 
-	searchForArtists = () => {
+	searchForArtists = (query) => {
         this.setState({err:'',artists:[]})
 
 		Axios.get('https://api.spotify.com/v1/search', {
@@ -26,7 +26,7 @@ class Artists extends Component {
 					`Bearer ${localStorage.getItem('access_token')}`,
 			},
 			params: {
-				q: this.state.searchField,
+				q: query || this.state.searchField,
 				type: 'artist',
 				market: 'US',
 				limit: 10,
@@ -49,10 +49,18 @@ class Artists extends Component {
             });
 	};
 
+
+	//this is for search on pressing enter
 	onSubmit = e => {
 		e.preventDefault();
 		this.searchForArtists();
 	};
+
+	//this is for searching as we typing
+	handleSearchChange = e =>{
+		 this.setState({ searchField: e.target.value })
+		 this.searchForArtists(e.target.value)
+	}
 
 	render() {
 		return (
@@ -63,7 +71,7 @@ class Artists extends Component {
 							type="text"
 							className="search-input"
 							placeholder="Search for an artist…"
-							onChange={e => this.setState({ searchField: e.target.value })}
+							onChange={this.handleSearchChange}
 						/>
 					</form>
 				</div>
