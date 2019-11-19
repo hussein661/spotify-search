@@ -20,3 +20,112 @@
 .App-link {
   color: #09d3ac;
 }
+
+.artists-page {
+  margin: 5rem auto;
+}
+
+.header-title {
+  top: 0;
+  padding: 0px 30px;
+  padding-left: 10px;
+  background: silver;
+  border: 1px solid grey;
+
+}
+.artists-container{
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 50px auto;
+}
+.artist-card {
+  border: 1px solid black;
+  padding: 5px;
+  width: 250px;
+  /* height: 400px; */
+  margin: 10px auto;
+}
+
+.artist-image {
+  margin: 0px;
+  height: 250px;
+  border-bottom: 1px solid black;
+}
+
+.artist-content {
+  height: 180px;
+  width: auto;
+}
+
+.artist-content-header {
+  margin-top: 0px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.artist-content-footer p {
+  margin-top: 20px;
+margin-bottom: -20px;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.input-container {
+  text-align: center
+}
+
+.search-input {
+  text-align: center;
+  width: 40%;
+  height: auto;
+  font-size: 1.6rem;
+  border: 1px solid  navy;
+  border-radius: 4px;
+}
+
+.spotify-link {
+  background: grey;
+  border:1px solid black;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.albums-title {
+  margin: 0 6rem;
+}
+
+.login-page {
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button {
+  font-size: 2rem;
+  width: 400px;
+  padding: 10px;
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+  
+
+}
+.login-button:hover {
+  background: grey;
+}
+
+.fa {
+  color: green;
+}
+
