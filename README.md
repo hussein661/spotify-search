@@ -1,7 +1,7 @@
 
-It took around 5 hours to finish.
+It took me around 5 hours to finish.
 
-Instructions :
+Instructions to test it :
 
 clone or download
 
