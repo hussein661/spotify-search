@@ -1,5 +1,5 @@
 
-overview : It took around 5 hours to finish.
+It took around 5 hours to finish.
 
 Instructions :
 
